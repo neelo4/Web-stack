@@ -24,7 +24,7 @@ body{
     background-repeat: no-repeat;
     height:80vh;
     border-radius:50px;
-    color  : #fff;
+    color  :#fff;
     cursor: pointer;
     flex:0.5;
     margin:10px;
@@ -46,9 +46,18 @@ body{
 
 .panel.active h3{
     opacity: 1;
+    transition:opacity 0.3 ease-in 0.4s;
 }
 
 @media(max-width  : 480px) {
+    .container{
+        width  : 100vw;
+    }
+
+    .panel:nth-of-type(4),
+    .panel:nth-of-type(5){
+        display: none;
+    }
     
 }
 
